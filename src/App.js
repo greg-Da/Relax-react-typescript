@@ -8,14 +8,14 @@ import Test from './pages/TestComponent'
 function App() {
   return (
     //<Home/>
-    <InscriptionHotel/>
+    //<InscriptionHotel/>
     //<Connexion/>
     //<ConfirmEmail/>
     
 
 
 
-    //<Test/>
+    <Test/>
     );
   }
   
