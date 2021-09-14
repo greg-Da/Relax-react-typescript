@@ -7,7 +7,7 @@ import Test from './pages/TestComponent'
 
 function App() {
   return (
-    //<Home/>
+    <Home/>
     //<InscriptionHotel/>
     //<Connexion/>
     //<ConfirmEmail/>
@@ -15,7 +15,7 @@ function App() {
 
 
 
-    <Test/>
+    //<Test/>
     );
   }
   
