@@ -12,6 +12,8 @@ import IconButton from "../components/IconButton/IconButton";
 import { CheckBox } from "../components/CheckBox/CheckBox";
 import { Radio, RadioGroup } from "../components/Radio/RadioItem.js";
 import Select from "react-select";
+import { Doughnut, Line, Pie } from 'react-chartjs-2';
+import {AiOutlineSearch} from 'react-icons/ai'
 
 
 function Test() {
@@ -24,6 +26,45 @@ function Test() {
     { label: "Herve", value: 52 },
     { label: "max", value: "52" },
   ];
+
+  const dataCharts = {
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    datasets: [
+      {
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)',
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
+
+  const options = {
+    scales: {
+      yAxes: [
+        {
+          ticks: {
+            beginAtZero: true,
+          },
+        },
+      ],
+    },
+  };
   return (
     <div>
       {/* BUTTON */}
@@ -146,21 +187,21 @@ function Test() {
       <IconButton
         textHover="hover"
         variant="red"
-        icon={<img className="w-5 h-5" src={logo} />}
+        icon={<AiOutlineSearch/>}
         onPress={() => alert("IconButton pressed!")}
       />
 
       <IconButton
         textHover="hover"
         variant="green"
-        icon={<img className="w-5 h-5" src={logo} />}
+        icon={<AiOutlineSearch/>}
         onPress={() => alert("IconButton pressed!")}
       />
 
       <IconButton
         textHover="hover"
         variant="gold"
-        icon={<img className="w-5 h-5" src={logo} />}
+        icon={<AiOutlineSearch/>}
         onPress={() => alert("IconButton pressed!")}
       />
 
@@ -195,14 +236,14 @@ function Test() {
         <TextField
           type="text"
           labelText="Your Name"
-          beginIcon={<img className="w-5 h-5" src={logo} />}
+          beginIcon={<AiOutlineSearch/>}
           placeholder="Full name"
           screenWidth="lg"
         />
         <TextField
           type="text"
           labelText="Your Email"
-          endIcon={<img className="w-5 h-5" src={logo} />}
+          endIcon={<AiOutlineSearch/>}
           iconColor="text-red-600"
           placeholder="Email"
           screenWidth="lg"
@@ -277,7 +318,7 @@ function Test() {
       />
       </div>
 
-      {/** RADIO */}
+      {/** CHARTS */}
       <h1 className="text-2xl my-5">Radio</h1>
 
       <RadioGroup variant="green" label="Favorite pet">
@@ -299,7 +340,25 @@ function Test() {
         <Radio value="dogs">Dogs</Radio>
         <Radio value="cats">Cats</Radio>
       </RadioGroup>
+
+            {/** CHARTS */}
+            <h1 className="text-2xl my-5">Charts</h1>
+
+            <div className='w-1/2'>
+              <Doughnut data={dataCharts} />
+            </div>
+
+            <div className='w-1/2'>
+              <Line data={dataCharts} options={options} />
+            </div>
+
+            <div className='w-1/2'>
+              <Pie data={dataCharts} />
+            </div>
+            
     </div>
+
+    
   );
 }
 
