@@ -1,13 +1,10 @@
 import Pieds from "../../assets/pieds.jpeg";
-import Button from "../../components/Button/Button";
 import Card from "../../components/Card/Card";
-import { CheckBox } from "../../components/CheckBox/CheckBox";
 import Navbar2 from "../../components/Navbar2/Navbar2";
-import { TextField } from "../../components/TextField/TextField";
 
 /**TRADUCTION */
 const title = "votre mail";
-const content = "lorem icbehwfbierhbiufrbhifrbhiicbe hwfbierhbiufrbhifrbhiicbehwfbierhbiufrbhifrbhi";
+const content = "Pour vous connecter à votre compte, cliquez sur le lien ci-dessous.";
 const link = "Je me connecte";
 const content2 = "Merci pour votre confiance.";
 const relax = "La Team Relax";
