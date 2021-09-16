@@ -251,6 +251,7 @@ function Test() {
 <div className='rounded-full'>
       <Select
         defaultValue={data[2]}
+        placeholder={<p>Type de prestation souhaitée</p>}
         options={data}
         isMulti
         styles={{
