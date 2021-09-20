@@ -1,8 +1,6 @@
-import Button from "../../../components/Button/Button";
-import Card from "../../../components/Card/Card";
+
 import Navbar2 from "../../../components/Navbar2/Navbar2";
 import SideBar from "../../../components/SideBar/SideBar";
-import { AiOutlineShoppingCart } from 'react-icons/ai'
 import SectionLeft from "./section/SectionLeft";
 import SectionRight from "./section/SectionRight";
 
