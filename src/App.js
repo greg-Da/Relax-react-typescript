@@ -21,9 +21,9 @@ function App() {
 
 
     /** IN PROGRESS */
-    //<DashboardHotel/>
+    <DashboardHotel/>
     //<GestionPersonnel/>
-    <PrestaFav/>
+    //<PrestaFav/>
 
 
     //<Test/>
