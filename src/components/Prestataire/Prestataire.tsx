@@ -40,7 +40,7 @@ function Prestataire(props: Props){
         
                     <div><a className='font-bold underline' href={data.link}>En savoir plus</a></div>
         
-                    <p>Soins pratiqués: {data.soins.map((item, index) => {
+                    <p className='w-1/5' >Soins pratiqués: {data.soins.map((item, index) => {
                         let num = data.soins.length
                         if (num -1 === index){
                             return (<span>{item}</span>)

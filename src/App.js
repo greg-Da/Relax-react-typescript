@@ -23,10 +23,10 @@ function App() {
     /** IN PROGRESS */
     //<DashboardHotel/>
     //<GestionPersonnel/>
-    //<PrestaFav/>
+    <PrestaFav/>
 
 
-    <Test/>
+    //<Test/>
     );
   }
   

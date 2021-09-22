@@ -77,10 +77,10 @@ return (
             <h1 className="text-xl">Mes prestataires favoris</h1>
         </div>
 
-          <div className="flex p-4">
-            <div className="w-1/2">
+          <div className="xl:flex p-4">
+            <div className="xl:w-1/2">
               <span className="text-center text-lg">Mes prestataires favoris</span>
-              <div className='mt-4 mr-2'>
+              <div className='mt-4 xl:mr-2'>
                 <Card>
                   <div style={{height: '41.7rem'}} className="p-4 overflow-scroll">
                       <ul>
@@ -97,9 +97,9 @@ return (
             </div>
 
 
-            <div className="w-1/2">
+            <div className="xl:w-1/2">
               <p className="text-center text-lg">Tous les prestataires</p>
-              <div className='mt-4 ml-2'>
+              <div className='mt-4 xl:ml-2'>
                 <Card>
                   <div className="p-4 h-96 overflow-scroll">
                       <ul>
