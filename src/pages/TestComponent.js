@@ -12,11 +12,24 @@ import IconButton from "../components/IconButton/IconButton";
 import { CheckBox } from "../components/CheckBox/CheckBox";
 import { Radio, RadioGroup } from "../components/Radio/RadioItem.js";
 import Select from "react-select";
-import { Doughnut, Line, Pie } from 'react-chartjs-2';
-import {AiOutlineSearch} from 'react-icons/ai'
-
+import { Doughnut, Line, Pie } from "react-chartjs-2";
+import { AiOutlineSearch } from "react-icons/ai";
+import MenuParams from "../components/MenuParams/MenuParams";
+import Calendar from "../components/Calendar/Calendar";
+import Prestataire from "../components/Prestataire/Prestataire";
 
 function Test() {
+
+  const presta = {
+    first_name: 'greg',
+    last_name: 'doe',
+    note: 5,
+    link: '#',
+    pic: Pieds,
+    soins: ['thai', 'something'],
+    time: '30H'
+  }
+
   const data = [
     { label: "Marcel", value: 51 },
     { label: "Patrick", value: 66 },
@@ -28,26 +41,26 @@ function Test() {
   ];
 
   const dataCharts = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
     datasets: [
       {
-        label: '# of Votes',
+        label: "# of Votes",
         data: [12, 19, 3, 5, 2, 3],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)',
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(255, 206, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)',
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
         ],
         borderWidth: 1,
       },
@@ -187,21 +200,21 @@ function Test() {
       <IconButton
         textHover="hover"
         variant="red"
-        icon={<AiOutlineSearch/>}
+        icon={<AiOutlineSearch />}
         onPress={() => alert("IconButton pressed!")}
       />
 
       <IconButton
         textHover="hover"
         variant="green"
-        icon={<AiOutlineSearch/>}
+        icon={<AiOutlineSearch />}
         onPress={() => alert("IconButton pressed!")}
       />
 
       <IconButton
         textHover="hover"
         variant="gold"
-        icon={<AiOutlineSearch/>}
+        icon={<AiOutlineSearch />}
         onPress={() => alert("IconButton pressed!")}
       />
 
@@ -236,14 +249,14 @@ function Test() {
         <TextField
           type="text"
           labelText="Your Name"
-          beginIcon={<AiOutlineSearch/>}
+          beginIcon={<AiOutlineSearch />}
           placeholder="Full name"
           screenWidth="lg"
         />
         <TextField
           type="text"
           labelText="Your Email"
-          endIcon={<AiOutlineSearch/>}
+          endIcon={<AiOutlineSearch />}
           iconColor="text-red-600"
           placeholder="Email"
           screenWidth="lg"
@@ -289,33 +302,33 @@ function Test() {
 
       {/* SELECT */}
       <h1 className="text-2xl my-5">Select</h1>
-<div className='rounded-full'>
-      <Select
-        defaultValue={data[2]}
-        placeholder={<p>Type de prestation souhaitée</p>}
-        options={data}
-        isMulti
-        styles={{
-                control: base => ({
-                    ...base,
-                    borderRadius: '999px',
-                    paddingTop: '5px',
-                    paddingBottom: '5px',
-                }),
-                multiValue: base => ({
-                    ...base,
-                    borderRadius: '999px',
-                })
-        }}
-        theme={theme => ({
+      <div className="rounded-full">
+        <Select
+          defaultValue={data[2]}
+          placeholder={<p>Type de prestation souhaitée</p>}
+          options={data}
+          isMulti
+          styles={{
+            control: (base) => ({
+              ...base,
+              borderRadius: "999px",
+              paddingTop: "5px",
+              paddingBottom: "5px",
+            }),
+            multiValue: (base) => ({
+              ...base,
+              borderRadius: "999px",
+            }),
+          }}
+          theme={(theme) => ({
             ...theme,
             colors: {
               ...theme.colors,
-              primary25: '#cadaaa',
-              primary50: '#42563d',
+              primary25: "#cadaaa",
+              primary50: "#42563d",
             },
-        })}
-      />
+          })}
+        />
       </div>
 
       {/** CHARTS */}
@@ -341,24 +354,38 @@ function Test() {
         <Radio value="cats">Cats</Radio>
       </RadioGroup>
 
-            {/** CHARTS */}
-            <h1 className="text-2xl my-5">Charts</h1>
+      {/** CHARTS */}
+      <h1 className="text-2xl my-5">Charts</h1>
 
-            <div className='w-1/2'>
-              <Doughnut data={dataCharts} />
-            </div>
+      <div className="w-1/2">
+        <Doughnut data={dataCharts} />
+      </div>
 
-            <div className='w-1/2'>
-              <Line data={dataCharts} options={options} />
-            </div>
+      <div className="w-1/2">
+        <Line data={dataCharts} options={options} />
+      </div>
 
-            <div className='w-1/2'>
-              <Pie data={dataCharts} />
-            </div>
-            
+      <div className="w-1/2">
+        <Pie data={dataCharts} />
+      </div>
+
+      {/** MENU PARAMS */}
+      <h1 className="text-2xl my-5">Menu params</h1>
+      <MenuParams />
+
+      {/** CALENDAR */}
+      <h1 className="text-2xl my-5">Calendar</h1>
+      <Calendar />
+
+
+      {/** PRESTATAIRE */}
+      <div className='bg-gray-300'>
+      <h1 className="text-2xl my-5">Prestataires Card</h1>
+      <Prestataire data={presta} />
+      <Prestataire data={presta} variant='sm' />
+      </div>
+      
     </div>
-
-    
   );
 }
 

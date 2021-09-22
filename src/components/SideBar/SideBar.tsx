@@ -9,7 +9,6 @@ type Variant =
 | 'gold'
 
 interface Props {
-  children:  React.ReactNode | React.ReactNode[];
 
   title: String;
   name: String;
@@ -24,13 +23,13 @@ interface Props {
  * @returns
  */
 export default function SideBar(props: Props) {
-  const { children, title, name, variant = 'green'} = props;
+  const { title, name, variant = 'green'} = props;
 
   const [open, setOpen] = React.useState(true)
 
 
   return (
-    <div style={{height: '100vh'}} className={`left-0 flex border-r border-gray-300 bg-white w-64 transform duration-500 ${open ? 'translate-x-0' : '-translate-x-52'}`}>
+    <div style={{height: '100vh'}} className={`left-0 flex border-r border-gray-300 bg-white w-64 z-40 transform duration-500 ${open ? 'translate-x-0 ' : '-translate-x-52 -mr-48'}`}>
         <div className={`h-full z-50 w-1/4 transform duration-500 ${open ? 'translate-x-0' : 'translate-x-52'} ${variant === 'green' ? "bg-green-500" : "bg-gold-500"}`}>
             <ul>
                 <li className='flex h-16 border-b border-white'>

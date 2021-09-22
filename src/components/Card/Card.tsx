@@ -9,7 +9,7 @@ type Variant =
 
 interface Props {
 
-  screenWidth: Variant;
+  screenWidth?: Variant;
 
   children: React.ReactNode;
 }
