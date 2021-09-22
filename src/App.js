@@ -11,8 +11,6 @@ import Welcome from './pages/Welcome/Welcome';
 
 function App() {
   return (
-    /**DONE */
-
     //<Home/>
     //<InscriptionHotel/>
     //<Connexion/>

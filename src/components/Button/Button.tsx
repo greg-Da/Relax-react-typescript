@@ -50,7 +50,7 @@ const classesByVariant: Record<Variant, string> = {
   gold: 'bg-gold-500 hover:bg-gold-400 text-white',
   red: 'bg-redCustom hover:bg-redCustom-light text-white',
   disabled: 'cursor-not-allowed bg-grey text-white',
-  outline: 'bg-transparent hover:bg-white hover:bg-opacity-30 hover:text-white text-pink border-2 border-pink',
+  outline: 'bg-transparent hover:bg-white hover:bg-opacity-60 hover:text-white text-pink border-2 border-pink',
   outlineDisabled:
     'bg-transparent cursor-not-allowed border-2 border-gray-300 hover:border-gray-300 hover:text-gray-300 text-gray-300 ',
 };
