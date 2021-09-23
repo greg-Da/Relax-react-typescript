@@ -17,6 +17,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import MenuParams from "../components/MenuParams/MenuParams";
 import Calendar from "../components/Calendar/Calendar";
 import Prestataire from "../components/Prestataire/Prestataire";
+import { Switch } from "../components/Switch/Switch";
 
 function Test() {
 
@@ -384,6 +385,13 @@ function Test() {
       <Prestataire data={presta} />
       <Prestataire data={presta} variant='sm' />
       </div>
+
+
+      {/** SWITCH */}
+      <h1 className="text-2xl my-5">Switch</h1>
+      <Switch defaultSelected />
+      <Switch color='gold' />
+      <Switch disabled />
       
     </div>
   );
