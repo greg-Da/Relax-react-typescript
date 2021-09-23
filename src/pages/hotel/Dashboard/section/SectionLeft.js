@@ -44,18 +44,18 @@ function SectionLeft() {
   };
 
   return (
-    <div className="lg:w-2/3 xs:w-full">
+    <div className="xl:w-2/3 w-full">
       <div className="md:flex">
         <div className="w-full md:mx-2 ">
           <Card>
-            <div className="py-6 px-10 lg:h-80 md:h-96">
+            <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Commander une prestation</span>
               <div className="flex justify-center my-4">
                 <div className="border border-black w-12 h-12 rounded-full flex justify-center items-center">
                   <AiOutlineShoppingCart className="w-8 h-8" />
                 </div>
               </div>
-              <div className='h-20 md:h-36 lg:h-28'>
+              <div className='h-20 md:h-36 lg:h-40 xl:h-28'>
                 <p>Vous souhaitez afficher vos commandes en cours ?</p>
                 <p className="mb-5">Cliquez ci-dessous pour les voir.</p>
               </div>
@@ -68,14 +68,14 @@ function SectionLeft() {
 
         <div className="w-full md:mx-2 mt-4 md:mt-0 ">
           <Card>
-            <div className="py-6 px-10 lg:h-80 md:h-96">
+            <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Mes commandes en cours</span>
               <div className="flex justify-center my-4">
                 <div className="border border-black w-12 h-12 rounded-full flex justify-center items-center">
                   <AiOutlineShoppingCart className="w-8 h-8" />
                 </div>
               </div>
-              <div className='h-20 md:h-36 lg:h-28'>
+              <div className='h-20 md:h-36 lg:h-40 xl:h-28'>
                 <p>Vous souhaitez commander une prestation ?</p>
                 <p className="mb-5">
                   Cliquez ci-dessous pour réaliser votre réservation.
@@ -92,14 +92,14 @@ function SectionLeft() {
       <div className="md:flex mt-4">
         <div className="w-full md:mx-2 mt-4 md:mt-0 ">
           <Card>
-            <div className="py-6 px-10 lg:h-80 md:h-96">
+            <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Commander une prestation</span>
               <div className="flex justify-center my-4">
                 <div className="border border-black w-12 h-12 rounded-full flex justify-center items-center">
                   <AiOutlineShoppingCart className="w-8 h-8" />
                 </div>
               </div>
-              <div className='h-20 md:h-36 lg:h-28'>
+              <div className='h-20 md:h-36 lg:h-40 xl:h-28'>
                 <p>Vous souhaitez afficher vos commandes en cours ?</p>
                 <p className="mb-5">Cliquez ci-dessous pour les voir.</p>
               </div>
@@ -112,14 +112,14 @@ function SectionLeft() {
 
         <div className="w-full md:mx-2 mt-4 md:mt-0 ">
           <Card>
-            <div className="py-6 px-10 lg:h-80 md:h-96">
+            <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Mes commandes en cours</span>
               <div className="flex justify-center my-4">
                 <div className="border border-black w-12 h-12 rounded-full flex justify-center items-center">
                   <AiOutlineShoppingCart className="w-8 h-8" />
                 </div>
               </div>
-              <div className='h-20 md:h-36 lg:h-28'>
+              <div className='h-20 md:h-36 lg:h-40 xl:h-28'>
                 <p>Vous souhaitez commander une prestation ?</p>
                 <p className="mb-5">
                   Cliquez ci-dessous pour réaliser votre réservation.
@@ -134,7 +134,7 @@ function SectionLeft() {
       </div>
       <div className="mt-4 md:mx-2 mt-4 md:mt-0 ">
         <Card>
-          <div className="py-6 xs: px-10 lg:h-806">
+          <div className="py-6 px-10 lg:h-806">
             <p className="text-left">Détail du Chiffre d’affaires</p>
             <Line data={dataCharts} options={options} />
           </div>

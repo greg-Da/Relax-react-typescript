@@ -7,7 +7,6 @@ import { FaBoxes, FaRegAddressBook } from "react-icons/fa";
 type Variant = "green" | "gold";
 
 interface Props {
-  id: string;
   title: String;
   name: String;
 
@@ -21,18 +20,18 @@ interface Props {
  * @returns
  */
 export default function SideBar(props: Props) {
-  const { id, title, name, variant = "green" } = props;
+  const { title, name, variant = "green" } = props;
 
   const [open, setOpen] = React.useState(true);
 
   return (
-    <div>
-      <div className={` w-64 transform duration-500 ${
+    <div style={{ height: "100vh" }} className=''>
+      <div className={`w-20 lg:w-64 transform duration-500 ${
           open ? "translate-x-0 " : "-translate-x-52 -mr-48"
         }`}></div>
       <div
-        style={{ height: "100vh" }}
-        className={`left-0 fixed flex border-r border-gray-300 bg-white w-64 z-40 transform duration-500 ${
+        
+        className={`left-0 fixed h-full flex border-r border-gray-300 bg-white lg w-64 z-40 transform duration-500 ${
           open ? "translate-x-0 " : "-translate-x-52 -mr-48"
         }`}
       >
@@ -42,13 +41,13 @@ export default function SideBar(props: Props) {
           } ${variant === "green" ? "bg-green-500" : "bg-gold-500"}`}
         >
           <ul>
-            <li className="flex h-16 border-b border-white">
+            <li className="flex h-10 xl:h-16 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <AiOutlineFileSearch className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-20 border-b border-white">
+            <li className="flex h-14 xl:h-20 border-b border-white">
               <div
                 className={`${
                   variant === "green" ? "bg-green-500" : "bg-gold-500"
@@ -56,55 +55,55 @@ export default function SideBar(props: Props) {
               ></div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <RiDashboard3Line className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <AiOutlineShoppingCart className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <FaBoxes className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <AiOutlineGift className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <FaRegAddressBook className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <AiOutlineLineChart className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <IoDocumentTextOutline className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <RiSettings3Line className="text-white w-6 h-6" />
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div className={`w-full w-1/4 flex justify-center items-center`}>
                 <RiMailSendLine className="text-white w-6 h-6" />
               </div>
@@ -113,7 +112,7 @@ export default function SideBar(props: Props) {
             <div className="absolute bottom-0 w-full">
               <li
                 onClick={() => setOpen(!open)}
-                className="flex h-14 border-b border-white cursor-pointer"
+                className="flex h-12 xl:h-14 border-b border-white cursor-pointer"
               >
                 <div className={` w-full flex justify-center items-center`}>
                   <IoArrowBackCircleOutline
@@ -137,7 +136,7 @@ export default function SideBar(props: Props) {
 
         <div className={`h-full w-full relative`}>
           <ul>
-            <li className="flex h-16 border-b border-white">
+            <li className="flex h-10 xl:h-16 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -147,7 +146,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-20 border-b border-white">
+            <li className="flex h-14 xl:h-20 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -157,7 +156,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -167,7 +166,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -177,7 +176,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -187,7 +186,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -197,7 +196,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -207,7 +206,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -217,7 +216,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -227,7 +226,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -237,7 +236,7 @@ export default function SideBar(props: Props) {
               </div>
             </li>
 
-            <li className="flex h-14 border-b border-white">
+            <li className="flex h-12 xl:h-14 border-b border-white">
               <div
                 className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
                   open ? "" : "hidden"
@@ -252,7 +251,7 @@ export default function SideBar(props: Props) {
             <ul>
               <li
                 onClick={() => setOpen(!open)}
-                className="flex h-14 border-b border-white cursor-pointer"
+                className="flex h-12 xl:h-14 border-b border-white cursor-pointer"
               >
                 <div
                   className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
