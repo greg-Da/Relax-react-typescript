@@ -7,6 +7,7 @@ import GestionPersonnel from './pages/hotel/Dashboard/parameters/gestion_perso/G
 import PrestaFav from './pages/hotel/Dashboard/parameters/gestion_perso/PrestaFav';
 import InscriptionHotel from './pages/hotel/InscriptionHotel/InscriptionHotel';
 import Test from './pages/TestComponent'
+import TypeInscription from './pages/TypeInscription/TypeInscription';
 import Welcome from './pages/Welcome/Welcome';
 
 function App() {
@@ -22,12 +23,12 @@ function App() {
     <DashboardHotel/>
     //<GestionPersonnel/>
     //<PrestaFav/>
+    //<TypeInscription/>
+    
+     //<Test />
 
+  );
+}
 
-    //<Test/>
-    );
-  }
-  
-  export default App;
-  
-  
+export default App;
+
