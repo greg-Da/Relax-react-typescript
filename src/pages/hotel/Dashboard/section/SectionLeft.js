@@ -44,9 +44,9 @@ function SectionLeft() {
   };
 
   return (
-    <div className="xl:w-2/3 w-full">
+    <div className="xl:w-7/12 w-full">
       <div className="md:flex">
-        <div className="w-full md:mx-2 ">
+        <div className="w-full lg:mx-2 ">
           <Card>
             <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Commander une prestation</span>
@@ -66,7 +66,7 @@ function SectionLeft() {
           </Card>
         </div>
 
-        <div className="w-full md:mx-2 mt-4 md:mt-0 ">
+        <div className="w-full lg:mx-2 mt-4 md:mt-0 ">
           <Card>
             <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Mes commandes en cours</span>
@@ -90,7 +90,7 @@ function SectionLeft() {
       </div>
 
       <div className="md:flex mt-4">
-        <div className="w-full md:mx-2 mt-4 md:mt-0 ">
+        <div className="w-full lg:mx-2 mt-4 md:mt-0 ">
           <Card>
             <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Commander une prestation</span>
@@ -110,7 +110,7 @@ function SectionLeft() {
           </Card>
         </div>
 
-        <div className="w-full md:mx-2 mt-4 md:mt-0 ">
+        <div className="w-full lg:mx-2 mt-4 md:mt-0 ">
           <Card>
             <div className="py-6 px-10  md:h-96 xl:h-80">
               <span className="text-xl">Mes commandes en cours</span>
@@ -132,11 +132,13 @@ function SectionLeft() {
           </Card>
         </div>
       </div>
-      <div className="mt-4 md:mx-2 mt-4 md:mt-0 ">
+      <div className="mt-4 lg:mx-2 mt-4 md:mt-0 ">
         <Card>
-          <div className="py-6 px-10 lg:h-806">
+          <div className="py-6 px-10 xl:h-100 ">
             <p className="text-left">Détail du Chiffre d’affaires</p>
-            <Line data={dataCharts} options={options} />
+            <div className='w-11/12 flex justify-center'>
+              <Line data={dataCharts} options={options} />
+            </div>
           </div>
         </Card>
       </div>

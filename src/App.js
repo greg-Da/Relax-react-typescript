@@ -19,12 +19,12 @@ function App() {
 
 
     /** IN PROGRESS */
-    //<DashboardHotel/>
+    <DashboardHotel/>
     //<GestionPersonnel/>
     //<PrestaFav/>
 
 
-    <Test/>
+    //<Test/>
     );
   }
   

@@ -122,14 +122,6 @@ export default function SideBar(props: Props) {
                   />
                 </div>
               </li>
-
-              <li className="flex w-full h-12 border-b border-white">
-                <div
-                  className={`${
-                    variant === "green" ? "bg-green-500" : "bg-gold-500"
-                  } transform duration-500 w-1/4 flex justify-center items-center`}
-                ></div>
-              </li>
             </div>
           </ul>
         </div>
@@ -259,18 +251,6 @@ export default function SideBar(props: Props) {
                   }`}
                 >
                   <span>Réduire le menu</span>
-                </div>
-              </li>
-              <li className="flex h-12 border-b border-white">
-                <div
-                  className={`w-full flex justify-center items-center border-b border-gray-300 bg-white ${
-                    open ? "" : "hidden"
-                  }`}
-                >
-                  <a className="cursor-pointer text-sm">
-                    <span className="font-bold">Mention légales</span> /CGU /
-                    CGV
-                  </a>
                 </div>
               </li>
             </ul>

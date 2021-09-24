@@ -10,10 +10,11 @@ function DashboardHotel() {
   return (
     <div className="App">
       <div className='flex w-full'>
-          <SideBar title='ESPACE HOTEL' name='Greg' variant='gold'></SideBar>
+          <SideBar title='ESPACE HOTEL' name='Greg' variant='gold' />
+
         <div className='w-full'>
         <Navbar2/>
-          <div className='block xl:flex h-full'>
+          <div className='block xl:flex '>
             <SectionLeft/>
             <SectionRight/>
 
