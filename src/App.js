@@ -23,8 +23,8 @@ function App() {
     //<DashboardHotel/>
     //<GestionPersonnel/>
     //<PrestaFav/>
-    //<Test />
-    <TypeInscription/>
+    <Test />
+    //<TypeInscription/>
 
   );
 }
