@@ -24,15 +24,17 @@ function TypeInscription() {
                     backgroundImage: `url(${Pieds})`,
                 }}
             >
-                <div className="flex justify-center">
-                    <div className="bg-white border-0 shadow-xl mr-4 px-4 py-10 space-y-4 w-5/12">
+                <div className="md:flex md:justify-center">
+
+                    <div className="bg-white border-0 shadow-xl py-10 space-y-4 md:mr-4 md:px-4 md:w-5/12">
                         <h1 className="text-lg">{registationByPhone}</h1>
 
                         <div className="flex justify-center">
                             <CgPhone className="w-14 h-14" />
                         </div>
 
-                        <p className="w-8/12 h-20 mx-auto">{detailByPhone}</p>
+                        <p className="w-8/12 mx-auto md:h-20">{detailByPhone}</p>
+                        
                         <Button
                             variant="green"
                             rounded="full"
@@ -60,6 +62,7 @@ function TypeInscription() {
                             <span className='mr-2'>&gt;</span>{nextstep}
                         </Button>
                     </div>
+
                 </div>
             </div>
         </div>
