@@ -26,7 +26,7 @@ function TypeInscription() {
             >
                 <div className="md:flex md:justify-center">
 
-                    <div className="bg-white border-0 shadow-xl py-10 space-y-4 md:mr-4 md:px-4 md:w-5/12">
+                    <div className="bg-white border-0 shadow-xl py-10 space-y-4 mb-6 md:mr-4 md:px-4 md:w-5/12 md:mb-0">
                         <h1 className="text-lg">{registationByPhone}</h1>
 
                         <div className="flex justify-center">
@@ -45,7 +45,7 @@ function TypeInscription() {
                         </Button>
                     </div>
 
-                    <div className="bg-white border-0 shadow-xl ml-4 px-4 py-10 space-y-4 w-5/12">
+                    <div className="bg-white border-0 shadow-xl py-10 space-y-4 md:mr-4 md:px-4 md:w-5/12">
                         <h1 className="text-lg">{registationOnline}</h1>
 
                         <div className="flex justify-center">
