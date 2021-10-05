@@ -36,6 +36,9 @@ module.exports = {
     extend: {
       translate: {
         '11/12': '90%'
+      },
+      spacing: {
+        '100': '30rem'
       }
     },
   },

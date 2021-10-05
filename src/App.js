@@ -20,11 +20,12 @@ function App() {
 
 
     /** IN PROGRESS */
-    //<DashboardHotel/>
+    <DashboardHotel/>
     //<GestionPersonnel/>
     //<PrestaFav/>
-    //<Test />
-    <TypeInscription/>
+    //<TypeInscription/>
+    
+     //<Test />
 
   );
 }

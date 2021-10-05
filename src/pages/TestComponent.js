@@ -12,12 +12,13 @@ import IconButton from "../components/IconButton/IconButton";
 import { CheckBox } from "../components/CheckBox/CheckBox";
 import { Radio, RadioGroup } from "../components/Radio/RadioItem.js";
 import Select from "react-select";
-import { Doughnut, Line, Pie } from "react-chartjs-2";
+import { Doughnut, Line, Pie, Bar } from "react-chartjs-2";
 import { AiOutlineSearch } from "react-icons/ai";
 import MenuParams from "../components/MenuParams/MenuParams";
 import Calendar from "../components/Calendar/Calendar";
 import Prestataire from "../components/Prestataire/Prestataire";
 import { Switch } from "../components/Switch/Switch";
+import DossierPic from "../components/DossierPic/DossierPic";
 
 function Test() {
 
@@ -65,6 +66,29 @@ function Test() {
         ],
         borderWidth: 1,
       },
+      
+    ],
+  };
+
+  const dataChartsBar = {
+    labels: ["jan", "feb", "mar", "apr", "may", "jun"],
+    datasets: [
+      {
+        label: '# of Red Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: 'rgb(255, 99, 132)',
+      },
+      {
+        label: '# of Blue Votes',
+        data: [2, 3, 20, 5, 1, 4],
+        backgroundColor: 'rgb(54, 162, 235)',
+      },
+      {
+        label: '# of Green Votes',
+        data: [3, 10, 13, 15, 22, 30],
+        backgroundColor: 'rgb(75, 192, 192)',
+      },
+      
     ],
   };
 
@@ -370,6 +394,10 @@ function Test() {
         <Pie data={dataCharts} />
       </div>
 
+      <div className="w-1/2">
+        <Bar data={dataChartsBar} />
+      </div>
+
       {/** MENU PARAMS */}
       <h1 className="text-2xl my-5">Menu params</h1>
       <MenuParams />
@@ -392,6 +420,12 @@ function Test() {
       <Switch defaultSelected />
       <Switch color='gold' />
       <Switch disabled />
+
+      {/** DOSSIER PIC */}
+      <h1 className="text-2xl my-5">DossierPic</h1>
+      <DossierPic title='frbhj fewhjvfe 2vhjg' color='gold' value={true} />
+      <DossierPic title='frbhj' value={true} pic={Pieds} />
+      <DossierPic value={true} pic={Pieds} />
       
     </div>
   );
