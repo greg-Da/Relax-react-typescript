@@ -1,6 +1,6 @@
 import Pieds from "../../assets/pieds.jpeg";
 import Button from "../../components/Button/Button";
-import Navbar2 from "../../components/Navbar2/Navbar2";
+import Navbar2 from "../../components/NavbarHotel/NavbarHotel";
 import { CgPhone, CgWebsite } from "react-icons/cg";
 
 /**TRADUCTION */

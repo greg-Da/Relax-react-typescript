@@ -9,15 +9,14 @@ import InscriptionHotel from './pages/hotel/InscriptionHotel/InscriptionHotel';
 import Test from './pages/TestComponent'
 import TypeInscription from './pages/TypeInscription/TypeInscription';
 import Welcome from './pages/Welcome/Welcome';
-
+import NotFound from './pages/NotFound';
+import Spa from './pages/Spa';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
-import Spa from './pages/Spa';
 
 function App() {
   return (
@@ -61,8 +60,14 @@ function App() {
           </Route>
 
 
-          <Route path="/">
+          
+
+          <Route exact path="/">
             <Home />
+          </Route>
+
+          <Route>
+            <NotFound />
           </Route>
           
         </Switch>
