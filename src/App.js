@@ -10,22 +10,63 @@ import Test from './pages/TestComponent'
 import TypeInscription from './pages/TypeInscription/TypeInscription';
 import Welcome from './pages/Welcome/Welcome';
 
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Spa from './pages/Spa';
+
 function App() {
   return (
-    //<Home/>
-    //<InscriptionHotel/>
-    //<Connexion/>
-    //<ConfirmEmail/>
-    //<Welcome/>
+
+    <Router>
+        <Switch>
+          <Route path="/connexion">
+            <Connexion />
+          </Route>
+          <Route path="/confirm-email">
+            <ConfirmEmail />
+          </Route>
+
+          <Route path="/welcome">
+            <Welcome />
+          </Route>
+
+          <Route path="/type-inscription">
+            <TypeInscription />
+          </Route>
+
+          <Route exact path="/hotel/inscription">
+            <InscriptionHotel />
+          </Route>
+          <Route exact path="/hotel/dashboard">
+            <DashboardHotel />
+          </Route>
+          <Route exact path="/hotel/gestion-personnel">
+            <GestionPersonnel />
+          </Route>
+          <Route exact path="/hotel/presta-fav">
+            <PrestaFav />
+          </Route>
+
+          <Route path="/test">
+            <Test />
+          </Route>
+
+          <Route path="/spa">
+            <Spa />
+          </Route>
 
 
-    /** IN PROGRESS */
-    <DashboardHotel/>
-    //<GestionPersonnel/>
-    //<PrestaFav/>
-    //<TypeInscription/>
-    
-     //<Test />
+          <Route path="/">
+            <Home />
+          </Route>
+          
+        </Switch>
+    </Router>
 
   );
 }

@@ -24,8 +24,8 @@ function Home() {
               Afin de facilier votre navigation sur notre site, merci de
               selectionner un des deux boutons ci-dessous.
             </p>
-            <div className="flex justify-center">
-              <div className="mr-3">
+            <div className="md:flex justify-center">
+              <div className="md:mr-3 ">
                 <Button
                   variant="outlineDisabled"
                   screenWidth="xxl"
@@ -34,7 +34,7 @@ function Home() {
                   Je suis un particulier
                 </Button>
               </div>
-              <div className="ml-3">
+              <div className="md:ml-3 md:mt-0 mt-2">
                 <Button
                   variant="outline"
                   screenWidth="xxl"

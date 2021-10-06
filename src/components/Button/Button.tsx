@@ -56,10 +56,10 @@ const classesByVariant: Record<Variant, string> = {
 };
 
 const classesByWidth: Record<ScreenWidth, string> = {
-  sm: 'w-20',
-  md: 'w-40',
-  xl: 'w-60',
-  xxl: 'w-80'
+  sm: 'md:w-20 w-10',
+  md: 'md:w-40 w-20',
+  xl: 'md:w-60 w-30',
+  xxl: 'md:w-80 w-40'
 }
 
 const classesByHeight: Record<ScreenHeight, string> = {
