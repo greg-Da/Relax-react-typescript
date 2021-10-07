@@ -39,30 +39,23 @@ export default function Navbar(props: Props) {
           <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
             <Link className='w-max font-semibold' to="/">Accueil</Link>
           </li>
-          <li onClick={ () => setMenu1(!menu1)} className={`xl:mx-4 md:mx-1.5 flex text-3xl py-2 border-t items-center justify-center ${mobile ? "" : "h-full"} `}>
+          <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/presentation">Qui sommes-nous ?</Link>
+          </li>
+          <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/recrutement">Recrutement</Link>
+          </li>
+          <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
           <div className='w-full text-center'>
-            <a className={` w-max font-semibold cursor-pointer  ${menu1 ? 'text-greenCustom-500' : ''} `}>Nos prestations &#8744;</a>
-            <ul className={`py-2 bg-white  ${menu1 ? "" : "hidden"}`}> 
-              <li className='py-2 border-t'><Link className='w-max text-center' to="/soin-domicile">Mon soin à domicile</Link></li>
-              <li className='py-2 border-t'><Link className='w-max text-center' to="/soin-spa">Mon soin en spa</Link></li>
-              <li className='py-2 border-t'><Link className='w-max text-center' to="/evenement">Mon évènement</Link></li>
+            <a onClick={() => setMenu1(!menu1)} className={` w-max font-semibold cursor-pointer  ${menu1 ? 'text-greenCustom-500' : ''} `}>Nos prestations &#8744;</a>
+            <ul className={`py-2 bg-white ${menu1 ? "" : "hidden"}`}> 
+              <li><Link className='w-max flex font-semibold m-auto' to="/#">{france}</Link></li>
+              <li><Link className='w-max flex font-semibold m-auto' to="/#">{anglais}</Link></li>
             </ul>
-            </div>
+          </div>
           </li>
           <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/spa">Nos spas</Link>
-          </li>
-          <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/contact">Contact</Link>
-          </li>
-          <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/#">Carte Pass</Link>
-          </li>
-          <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/#">Bon Cadeaux</Link>
-          </li>
-          <li className={`xl:ml-4 md:ml-1.5  text-3xl py-2 border-t justify-center ${mobile ? "" : "h-full"} flex items-center`}>
-            <Link className='w-max font-semibold' to="/#">Mon compte</Link>
+            <Link className='w-max font-semibold flex' to="/#"><FaUserCircle className='mt-0.5 mr-1' /> Mon compte</Link>
           </li>
         </ul>
 
@@ -70,7 +63,7 @@ export default function Navbar(props: Props) {
 
         <ul className={`hidden lg:flex h-full`}>
           <li className={`xl:mx-6 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/qui-nous-sommes">Qui sommes-nous ?</Link>
+            <Link className='w-max font-semibold' to="/presentation">Qui sommes-nous ?</Link>
           </li>
           <li className={`xl:mx-6 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
             <Link className='w-max font-semibold' to="/recrutement">Recrutement</Link>
