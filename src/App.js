@@ -1,16 +1,16 @@
 import './App.css';
-import ConfirmEmail from './pages/ConfirmEmail/ConfirmEmail';
-import Connexion from './pages/Connexion/Connexion';
+import ConfirmEmail from './pages/InscriptionConnexion/ConfirmEmail/ConfirmEmail';
+import Connexion from './pages/InscriptionConnexion/Connexion/Connexion';
 import Home from './pages/Home'
 import DashboardHotel from './pages/hotel/Dashboard/DashboardHotel';
 import GestionPersonnel from './pages/hotel/Dashboard/parameters/gestion_perso/GestionPersonnel';
 import PrestaFav from './pages/hotel/Dashboard/parameters/gestion_perso/PrestaFav';
 import InscriptionHotel from './pages/hotel/InscriptionHotel/InscriptionHotel';
 import Test from './pages/TestComponent'
-import TypeInscription from './pages/TypeInscription/TypeInscription';
-import Welcome from './pages/Welcome/Welcome';
+import TypeInscription from './pages/InscriptionConnexion/TypeInscription/TypeInscription';
+import Welcome from './pages/InscriptionConnexion/Welcome/Welcome';
 import NotFound from './pages/NotFound';
-import Spa from './pages/Spa';
+import Spa from './pages/static/Spa';
 
 import {
   BrowserRouter as Router,
