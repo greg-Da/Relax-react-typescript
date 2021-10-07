@@ -1,20 +1,16 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import Logo from '../../assets/logo-texte.png';
-import France from '../../assets/france.png';
-//import Anglais from '../../assets/united-kingdom.png';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { ImCross } from 'react-icons/im'
 
 interface Props {}
 
-export default function Navbar(props: Props) {
+export default function NavbarParticulier(props: Props) {
 
   const [menu1, setMenu1] = React.useState(false)
   const [menu2, setMenu2] = React.useState(false)
   const [mobile, setMobile] = React.useState(false)
-
-  const langue = 'Francais'
 
   return (
     <div style={mobile ? {height: '100vh', width: '100vw'} : {} } className={`w-full ${mobile ? 'absolute' : 'h-24 fixed relative'} bg-white flex top-0  z-50 `}>
@@ -79,20 +75,39 @@ export default function Navbar(props: Props) {
         </div>
 
         <ul className={`hidden lg:flex h-full`}>
-          <li className={`xl:mx-6 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/qui-nous-sommes">Qui sommes-nous ?</Link>
+          <li className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/">Accueil</Link>
           </li>
-          <li className={`xl:mx-6 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <Link className='w-max font-semibold' to="/recrutement">Recrutement</Link>
-          </li>
-          <li onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)} className={`xl:mx-6 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <a className='w-max font-semibold cursor-pointer'>{langue} &#8744;</a>
-            <ul style={{top: '96px'}} className={`border-t-4 border-greenCustom-400 p-4 bg-white absolute w-40 ${menu1 ? "block" : "hidden"}`}> 
-              <li><Link className='w-max font-semibold' to="/#">Francais</Link></li>
-              <li><Link className='w-max font-semibold' to="/#">Anglais</Link></li>
+          <li onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)} className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <a className='w-max font-semibold cursor-pointer'>Nos prestations &#8744;</a>
+            <ul style={{top: '96px'}} className={`border-t-4 border-greenCustom-400 p-4 bg-white absolute  ${menu1 ? "block" : "hidden"}`}> 
+              <li><Link className='w-max font-semibold' to="/soin-domicile">Mon soin à domicile</Link></li>
+              <li><Link className='w-max font-semibold' to="/soin-spa">Mon soin en spa</Link></li>
+              <li><Link className='w-max font-semibold' to="/evenement">Mon évènement</Link></li>
             </ul>
           </li>
-          <li className='xl:ml-6 md:ml-1.5  xl:text-lg text-sm h-full flex items-center'>
+          <li className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/spa">Nos spas</Link>
+          </li>
+          <li onMouseEnter={() => setMenu2(true)} onMouseLeave={() => setMenu2(false)} className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <a className='w-max font-semibold cursor-pointer'>Marques partenaires &#8744;</a>
+            <ul style={{top: '96px'}} className={`border-t-4 border-greenCustom-400 p-4 bg-white absolute w-40 ${menu2 ? "block" : "hidden"}`}> 
+              <li><Link className='w-max font-semibold' to="/shiseido">Shiseido</Link></li>
+              <li><Link className='w-max font-semibold' to="/codage">Codage</Link></li>
+              <li><Link className='w-max font-semibold' to="/absolution">Absolution</Link></li>
+              <li><Link className='w-max font-semibold' to="/terraké">Terraké</Link></li>
+            </ul>
+          </li>
+          <li className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/contact">Contact</Link>
+          </li>
+          <li className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/#">Carte Pass</Link>
+          </li>
+          <li className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
+            <Link className='w-max font-semibold' to="/#">Bon Cadeaux</Link>
+          </li>
+          <li className='xl:ml-4 md:ml-1.5  xl:text-lg text-sm h-full flex items-center'>
             <Link className='w-max font-semibold' to="/#">Mon compte</Link>
           </li>
         </ul>
