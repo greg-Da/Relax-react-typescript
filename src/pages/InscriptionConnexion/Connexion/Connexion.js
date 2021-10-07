@@ -1,9 +1,9 @@
-import Pieds from "../../assets/pieds.jpeg";
-import Button from "../../components/Button/Button";
-import Card from "../../components/Card/Card";
-import { CheckBox } from "../../components/CheckBox/CheckBox";
-import Navbar2 from "../../components/NavbarHotel/NavbarHotel";
-import { TextField } from "../../components/TextField/TextField";
+import Pieds from "../../../assets/pieds.jpeg";
+import Button from "../../../components/Button/Button";
+import Card from "../../../components/Card/Card";
+import { CheckBox } from "../../../components/CheckBox/CheckBox";
+import Navbar2 from "../../../components/NavbarHotel/NavbarHotel";
+import { TextField } from "../../../components/TextField/TextField";
 
 /**TRADUCTION */
 const connexion = "CONNECTEZ-VOUS";

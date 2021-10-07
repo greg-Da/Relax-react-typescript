@@ -1,6 +1,6 @@
-import Pieds from "../../assets/pieds.jpeg";
-import Card from "../../components/Card/Card";
-import Navbar2 from "../../components/NavbarHotel/NavbarHotel";
+import Pieds from "../../../assets/pieds.jpeg";
+import Card from "../../../components/Card/Card";
+import Navbar2 from "../../../components/NavbarHotel/NavbarHotel";
 
 /**TRADUCTION */
 const title = "votre mail";
