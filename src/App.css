@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Calibri Regular';
-  position: relative;
+  overflow-x: hidden;
 }
 
 .App-logo {
