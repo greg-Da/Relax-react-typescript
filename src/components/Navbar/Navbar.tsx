@@ -69,7 +69,7 @@ export default function Navbar(props: Props) {
             <Link className='w-max font-semibold' to="/recrutement">Recrutement</Link>
           </li>
           <li onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)} className={`xl:mx-6 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
-            <a className='w-max font-semibold cursor-pointer flex'>{france} <span className={`${menu1 ? 'transform rotate-180 dration-300' : ''} ml-2`}>&#8744;</span></a>
+            <a className='w-max font-semibold cursor-pointer flex'>{france} <span className={`${menu1 ? 'transform rotate-180' : ''} ml-2`}>&#8744;</span></a>
             <ul style={{top: '96px'}} className={`border-t-4 border-greenCustom-400 p-4 bg-white absolute w-40 ${menu1 ? "block" : "hidden"}`}> 
               <li><Link className='w-max flex font-semibold' to="/#">{france}</Link></li>
               <li><Link className='w-max font-semibold' to="/#">{anglais}</Link></li>

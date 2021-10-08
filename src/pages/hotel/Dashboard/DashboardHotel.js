@@ -1,5 +1,5 @@
 
-import NavbarHotel from "../../../components/NavbarHotel/NavbarHotel";
+import BandeauHotel from "../../../components/BandeauHotel/BandeauHotel";
 import SideBar from "../../../components/SideBar/SideBar";
 import SectionLeft from "./section/SectionLeft";
 import SectionRight from "./section/SectionRight";
@@ -13,7 +13,7 @@ function DashboardHotel() {
           <SideBar title='ESPACE HOTEL' name='Greg' variant='gold' />
 
         <div className='w-full'>
-        <NavbarHotel/>
+        <BandeauHotel/>
           <div className='block xl:flex '>
             <SectionLeft/>
             <SectionRight/>

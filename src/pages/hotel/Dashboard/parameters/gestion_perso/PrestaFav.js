@@ -1,7 +1,7 @@
 import Calendar from "../../../../../components/Calendar/Calendar";
 import Card from "../../../../../components/Card/Card";
 import MenuParams from "../../../../../components/MenuParams/MenuParams";
-import NavbarHotel from "../../../../../components/NavbarHotel/NavbarHotel";
+import BandeauHotel from "../../../../../components/BandeauHotel/BandeauHotel";
 import Prestataire from "../../../../../components/Prestataire/Prestataire";
 import SideBar from "../../../../../components/SideBar/SideBar";
 import Pieds from '../../../../../assets/pieds.jpeg'
@@ -72,7 +72,7 @@ return (
         <SideBar title="ESPACE HOTEL" name="Greg" variant="gold"></SideBar>
 
         <div className="w-full">
-            <NavbarHotel />
+            <BandeauHotel />
             <div className="flex items-center justify-center w-full h-28 border-t border-b border-gray-300">
             <h1 className="text-xl">Mes prestataires favoris</h1>
         </div>
