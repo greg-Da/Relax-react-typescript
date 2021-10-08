@@ -15,7 +15,7 @@ export default function NavbarParticulier(props: Props) {
 
   const france = <p className='w-max flex' ><img className='mr-1 w-4' src={France} />Francais </p>
   const anglais = <p className='w-max flex' ><img className='mr-1 w-4' src={Anglais} />English </p>
-
+ 
   return (
     <div style={mobile ? {height: '100vh', width: '100vw'} : {} } className={`w-full ${mobile ? 'absolute' : 'h-24 fixed relative'} bg-white flex top-0  z-50 `}>
       <div className="w-1/2 mt-auto mb-auto ml-4">

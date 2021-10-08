@@ -70,7 +70,7 @@ return (
     <div className="App">
         <div className="flex w-full">
         <SideBar title="ESPACE HOTEL" name="Greg" variant="gold"></SideBar>
-
+ 
         <div className="w-full">
             <BandeauHotel />
             <div className="flex items-center justify-center w-full h-28 border-t border-b border-gray-300">

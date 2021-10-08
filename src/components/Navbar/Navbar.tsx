@@ -57,7 +57,7 @@ export default function Navbar(props: Props) {
           <li className={`xl:mx-4 md:mx-1.5  text-3xl py-2 border-t flex items-center justify-center ${mobile ? "" : "h-full"} `}>
             <Link className='w-max font-semibold flex' to="/#"><FaUserCircle className='mt-0.5 mr-1' /> Mon compte</Link>
           </li>
-        </ul>
+        </ul> 
 
         </div>
 

@@ -15,7 +15,7 @@ function GestionPersonnel() {
             <h1 className="text-xl">Informations du compte - Général</h1>
           </div>
           <div className="my-4">
-            <MenuParams />
+            <MenuParams /> 
           </div>
           <Calendar />
         </div>

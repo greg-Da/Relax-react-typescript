@@ -73,7 +73,7 @@ export default function NavbarParticulier(props: Props) {
         </ul>
 
         </div>
-
+ 
         <ul className={`hidden lg:flex h-full`}>
           <li className={`xl:mx-4 md:mx-1.5  xl:text-lg text-sm flex items-center justify-center ${mobile ? "" : "h-full"} `}>
             <Link className='w-max font-semibold' to="/">Accueil</Link>

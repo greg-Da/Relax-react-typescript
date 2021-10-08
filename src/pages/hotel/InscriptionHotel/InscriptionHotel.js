@@ -10,7 +10,7 @@ import Select from "react-select";
 const inscription = "INSCRIVEZ-VOUS";
 const inscription2 = "JE M'INSCRIS";
 const mail = "Adresse email";
-const name = "Nom de l’hôtel";
+const name = "Nom de l’hôtel"; 
 const password = "Mot de passe";
 const polConfidentiality = "J’accepte la politique de confidentialité.";
 const star = "Nombre d’étoile";
