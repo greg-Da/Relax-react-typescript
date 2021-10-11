@@ -17,6 +17,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import GeneralParamsHotel from './pages/hotel/Dashboard/parameters/compte/GeneralParamsHotel';
 
 function App() {
   return (
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route exact path="/hotel/presta-fav">
             <PrestaFav />
+          </Route>
+          <Route exact path="/hotel/general">
+            <GeneralParamsHotel />
           </Route>
 
           <Route path="/test">

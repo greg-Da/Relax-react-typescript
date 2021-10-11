@@ -8,7 +8,7 @@ function MenuParams(props: Props) {
 
   return (
     <div className="flex justify-center">
-      <ul className="flex">
+      <ul className="xl:flex">
         <li
         className='cursor-pointer	'
           onMouseEnter={() => setSelected(1)}
@@ -17,7 +17,7 @@ function MenuParams(props: Props) {
           <div className="border flex items-center h-16 px-4">
             Paramètres de votre compte <FiChevronDown />
           </div>
-          <ul className={`${selected === 1 ? "" : "hidden"} flex absolute`}>
+          <ul className={`${selected === 1 ? "" : "hidden"} xl:flex xl:absolute`}>
             <li>
               <div
                 style={{ width: "min-content", maxWidth: "200px" }}
