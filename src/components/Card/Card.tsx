@@ -21,5 +21,5 @@ export default function Card(props: Props) {
     size: { sm: 'w-2/6', md: 'w-1/2', lg: 'w-4/6', full: 'w-full' },
   };
 
-  return <div className={'bg-white border-0 shadow-xl rounded-lg  ' + variants.size[screenWidth]}>{children}</div>;
+  return <div className={'bg-white border-0 shadow-lg rounded-lg  ' + variants.size[screenWidth]}>{children}</div>;
 }

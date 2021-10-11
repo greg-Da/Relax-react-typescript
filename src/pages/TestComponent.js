@@ -1,5 +1,5 @@
 import "../App.css";
-import React from "react";
+import React, { Children } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Pieds from "../assets/pieds.jpeg";
 import Button from "../components/Button/Button";
@@ -21,6 +21,8 @@ import { Switch } from "../components/Switch/Switch";
 import DossierPic from "../components/DossierPic/DossierPic";
 
 function Test() {
+
+  const [test, setTest] = React.useState('')
 
   const presta = {
     first_name: 'greg',
@@ -356,13 +358,14 @@ function Test() {
         />
       </div>
 
-      {/** CHARTS */}
+      {/** RADIO */}
       <h1 className="text-2xl my-5">Radio</h1>
 
-      <RadioGroup variant="green" label="Favorite pet">
+      <RadioGroup onChange={(event) => setTest(event)} variant="green" label="Favorite pet">
         <Radio value="dogs">Dogs</Radio>
         <Radio value="cats">Cats</Radio>
       </RadioGroup>
+      <h1>{test}</h1>
 
       <RadioGroup variant="gold" defaultValue="cats" label="Favorite pet">
         <Radio value="dogs">Dogs</Radio>

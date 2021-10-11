@@ -7,7 +7,7 @@ import Anglais from '../../assets/anglais.svg';
 import France from '../../assets/france.svg';
 interface Props {}
 
-export default function NavbarParticulier(props: Props) {
+export default function NavbarHotel(props: Props) {
 
   const [menu1, setMenu1] = React.useState(false)
   const [menu2, setMenu2] = React.useState(false)

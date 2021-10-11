@@ -18,6 +18,7 @@ import {
   Route,
 } from "react-router-dom";
 import GeneralParamsHotel from './pages/hotel/Dashboard/parameters/compte/GeneralParamsHotel';
+import HomeHotel from './pages/hotel/HomeHotel/HomeHotel';
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route exact path="/hotel/general">
             <GeneralParamsHotel />
+          </Route>
+          <Route exact path="/hotel">
+            <HomeHotel />
           </Route>
 
           <Route path="/test">
